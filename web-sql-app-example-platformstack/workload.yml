@@ -1,0 +1,20 @@
+apiVersion: platform.stacksecure.io/v1alpha1
+kind: PlatformStack
+metadata:
+  name: hello-stack
+  namespace: default
+spec:
+  parameters:
+    appName: hello-app
+    namespace: hello-stack
+    image: nginxdemos/hello
+    port: 80
+    host: hello-stack.dev
+    issuerName: local-ca-issuer
+
+    dbName: hello-db
+    dbImage: postgres:16
+    dbPort: 5432
+    dbStorage: 1Gi
+    dbUsername: postgres
+    dbPassword: postgres
