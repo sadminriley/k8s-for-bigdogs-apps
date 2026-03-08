@@ -1,0 +1,12 @@
+apiVersion: platform.stacksecure.io/v1alpha1
+kind: PlatformWorkload
+metadata:
+  name: hello-demo
+  namespace: default
+spec:
+  parameters:
+    appName: hello-demo
+    namespace: hello-demo
+    image: nginxdemos/hello
+    port: 80
+    host: hello.test
