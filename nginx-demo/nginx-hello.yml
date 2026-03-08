@@ -11,4 +11,4 @@ spec:
     port: 80
     host: hello.test
     tlsEnabled: true
-    issuerName: selfsigned-issuer
+    issuerName: local-ca-issuer
