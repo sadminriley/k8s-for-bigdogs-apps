@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: local-dev-ca
+  namespace: cert-manager
+spec:
+  isCA: true
+  commonName: local-dev-ca
+  secretName: local-dev-ca-secret
+  issuerRef:
+    name: local-ca-bootstrap
+    kind: ClusterIssuer
