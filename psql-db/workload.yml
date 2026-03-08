@@ -1,0 +1,14 @@
+apiVersion: platform.stacksecure.io/v1alpha1
+kind: PlatformDatabase
+metadata:
+  name: app-db
+  namespace: default
+spec:
+  parameters:
+    dbName: app-db
+    namespace: app-db
+    image: postgres:16
+    port: 5432
+    storage: 1Gi
+    username: postgres
+    password: postgres
