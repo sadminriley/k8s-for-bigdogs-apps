@@ -10,3 +10,5 @@ spec:
     image: nginxdemos/hello
     port: 80
     host: hello.test
+    tlsEnabled: true
+    issuerName: selfsigned-issuer
